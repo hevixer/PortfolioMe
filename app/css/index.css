@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.container .navbar .logo h1 {
+  color: white;
+  font-style: italic;
+}
+
+.container .navbar .menu a {
+  color: white;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+.container .navbar .menu a:hover {
+  color: blue;
+}
+
+.container .navbar .scl a {
+  color: white;
+}
+.container .navbar .scl a:hover {
+  color: blue;
+}
+
+.container .menuprofile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+.container .menuprofile {
+  text-align: center;
+  color: white;
+}
+
+.container .menuprofile a {
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: solid 0 1px black;
+  background-color: rgb(47, 54, 54);
+  color: white;
+  filter: drop-shadow(0px 0px 7px rgb(47, 54, 54));
+}
+
+.container svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-image: url(img/whutao.jpg);
+  background-color: #0e4166;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(14, 65, 102, 0.86),
+    #0e4166
+  );
+  z-index: -9999;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 253, 253);
+}
+.skills {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(52, 116, 255);
+}
+.project {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+#about {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about .container {
+  width: 1092px;
+  height: 500px;
+  align-items: center;
+}
+
+#about .container .me {
+  position: relative;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+#about .container .me h1 {
+  font-size: 35px;
+}
+#about .container .me p {
+  font-size: 17px;
+}
+
+#about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px 0 0;
+  gap: 15px;
+}
+
+#about .container .borderbox {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #e7e7e7;
+}
+
+#about .container .borderbox .box {
+  align-items: center;
+  margin: 35px 30px;
+  flex-direction: column;
+}
+
+/* Start Copas Me */
+
+#skills {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#skills .container {
+  width: 1092px;
+  height: 500px;
+}
+
+#skills .container .me {
+  position: relative;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  top: 5px;
+  color: white;
+}
+#skills .container .me h1 {
+  font-size: 35px;
+}
+#skills .container .me p {
+  font-size: 17px;
+}
+
+#skills .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px 0 0;
+  gap: 15px;
+}
+
+#skills .container .borderbox {
+  display: grid;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+#skills .container .borderbox .box {
+  display: flex;
+  align-items: center;
+  margin: 20px 30px;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  transition: 0.3s ease;
+}
+
+#skills .container .borderbox .box:hover {
+  transform: translateY(-10px);
+}
+
+#skills .container .borderbox .box .frontskills {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#skills .container .borderbox .box .frontskills div {
+  background-color: rgb(238, 116, 116);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+#skills .container .borderbox .box .backend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#skills .container .borderbox .box .backend div {
+  background-color: rgb(116, 184, 125);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+#skills .container .borderbox .box .design {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#skills .container .borderbox .box .design div {
+  background-color: rgb(102, 159, 224);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+#project {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#project .container {
+  width: 1092px;
+  height: 500px;
+}
+
+#project .container .me {
+  position: relative;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+#project .container .me h1 {
+  font-size: 35px;
+}
+#project .container .me p {
+  font-size: 17px;
+}
+
+#project .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px 0 0;
+  gap: 15px;
+}
+
+#project .container .smallproject {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#project .container .smallproject .projectbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+#project .container .smallproject .projectbox .box img {
+  border-radius: 10px;
+}
+#project .container .smallproject .projectbox .box {
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(126, 126, 241);
+  color: white;
+}
+
+#project .container .smallproject .projectbox .box .tools button {
+  background-color: rgb(126, 126, 241);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: white;
+  gap: 5px;
+}
+/* Mumet Bro */
+#project .container .smallproject .projectbox .box .tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#project .container .smallproject .projectbox .box .get {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#project .container .smallproject .projectbox .box .get a{
+  background-color: #4661ff;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+  margin: 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+footer .mainmenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20%;
+}
+
+footer .mainmenu .contactme{
+  margin: 20px;
+}
+footer .mainmenu .menu1 {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+footer .mainmenu .menu2 {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+/* Footer */
